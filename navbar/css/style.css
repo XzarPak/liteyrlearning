@@ -1,0 +1,609 @@
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#heading-space {
+    text-align: center;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:20vh;
+    background: url(space.jpg);
+    background-position-x: center;
+    background-size: 25%;
+    animation: animatespace 50s linear infinite;
+}
+
+.logbutton {
+    position: fixed;
+    right: 2%;
+    size: auto;
+    border: 0;
+    line-height: 2;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(83, 83, 83, 1);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+
+}
+
+.logbutton:hover {
+    background-color: aqua;
+}
+
+.logbutton:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+
+}
+
+@keyframes animatespace {
+    0%,100%
+    {
+        transform: scale(1);
+
+    }
+    50%
+    {
+        transform: scale(1.2);
+
+    }
+}
+
+span {
+    position: absolute;
+    top: 15%;
+    left: 80%;
+    width: 2px;
+    height: 2px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(255,255,255,0.1),
+    0 0 0 8px rgba(255,255,255,0.1),
+    0 0 20px rgba(255,255,255,1);
+    animation: animatestars 2s linear infinite;
+}
+
+span::before {
+    content:'';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 1px;
+    background: linear-gradient(90deg, #fff, transparent);
+}
+
+@keyframes animatestars {
+    0%
+    {
+        transform: rotate(315deg) translateX(0);
+        opacity:1;
+    }
+    70%
+    {
+        opacity:1;
+    }
+    100%
+    {
+        transform: rotate(315deg) translateX(-300px);
+        opacity:0;
+    }
+}
+
+span:nth-child(1) {
+    top: 0;
+    right:50px;
+    left: initial;
+    animation-delay: 0;
+    animation-duration: 1s;
+}
+
+span:nth-child(2) {
+    top: 0;
+    right:200px;
+    left: initial;
+    animation-delay: 0.4;
+    animation-duration: 3s;
+}
+
+span:nth-child(3) {
+    top: 0;
+    right:500px;
+    left: initial;
+    animation-delay: 1.2;
+    animation-duration: 2s;
+}
+
+span:nth-child(4) {
+    top: 0;
+    right:650px;
+    left: initial;
+    animation-delay: 0.8;
+    animation-duration: 3s;
+}
+
+span:nth-child(5) {
+    top: 0;
+    right:725px;
+    left: initial;
+    animation-delay: 0.6;
+    animation-duration: 1.5s;
+}
+
+span:nth-child(6) {
+    top: 0;
+    right:1425px;
+    left: initial;
+    animation-delay: 0.8;
+    animation-duration: 3s;
+}
+
+span:nth-child(7) {
+    top: 0;
+    right:950px;
+    left: initial;
+    animation-delay: 1.3;
+    animation-duration: 1s;
+}
+
+span:nth-child(8) {
+    top: 0;
+    right:1250px;
+    left: initial;
+    animation-delay: 0.4;
+    animation-duration: 2s;
+}
+
+span:nth-child(9) {
+    top: 0;
+    right:1375px;
+    left: initial;
+    animation-delay: 0.8;
+    animation-duration: 3s;
+}
+
+span:nth-child(10) {
+    top: 0;
+    right:1550px;
+    left: initial;
+    animation-delay: 2;
+    animation-duration: 1.4s;
+}
+
+span:nth-child(11) {
+    top: 0;
+    right:1625px;
+    left: initial;
+    animation-delay: 1;
+    animation-duration: 2.5s;
+}
+
+span:nth-child(12) {
+    top: 0;
+    right:1700px;
+    left: initial;
+    animation-delay: 0.4;
+    animation-duration: 1s;
+}
+
+span:nth-child(13) {
+    top: 0;
+    right:1850px;
+    left: initial;
+    animation-delay: 1.4;
+    animation-duration: 2s;
+}
+
+span:nth-child(14) {
+    top: 0;
+    right:2000px;
+    left: initial;
+    animation-delay: 0.6;
+    animation-duration: 4s;
+}
+
+#heading-space h1 { 
+    text-shadow: 0 0 3px #ffffff, 0 0 5px #ffffff;
+    position: relative;
+    color: white;
+    font-size: 50px;
+    text-shadow: 0 0 0 4px rgba(255,255,255,0.1),
+    0 0 0 8px rgba(255,255,255,0.1),
+    0 0 20px rgba(255,255,255,1);
+}
+
+#heading-space p {
+    position: relative;
+    color: white;
+    text-shadow: 0 0 0 4px rgba(255,255,255,0.1),
+    0 0 0 8px rgba(255,255,255,0.1),
+    0 0 20px rgba(255,255,255,1);
+}
+
+#nav-bar {
+    position: fixed;
+    top: 18vh;
+    width:100%;
+    background-image: linear-gradient(grey, black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    z-index: 1;
+}
+
+#nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+#nav-bar li {
+    float: left;
+  }
+  
+#nav-bar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+#nav-bar li a:hover {
+    background-color: #111;
+  }
+
+#nav-bar img {
+    height: 10%;
+    justify-content: right;
+}
+
+#cio {
+    top: 20vh;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    position: absolute;
+    background-position-x: center;
+    z-index: -1;
+}
+
+#cio h1 {
+    text-align: left;
+    margin-top:5% ;
+    margin-left:15%;
+}
+
+#cio h2 {
+    margin-top:10% ;
+    margin-left:30.2%;
+    margin-right:35%;
+    text-align: justify;
+}
+
+#cio p {
+    margin-top:0% ;
+    margin-left:28%;
+    margin-right:35%;
+    text-align: justify;
+}
+
+#cio img {
+    width:15%;
+    height:30%;
+    clip-path: circle();
+    margin-top:0% ;
+    margin-left:24%;
+    margin-right:35%;
+}
+
+#cto {
+    top: 20vh;
+    left: 40%;
+    width: 100%;
+    height: 100%;
+    color: white;
+    position: absolute;
+    background-position-x: center;
+    z-index: -1;
+}
+
+#cto h1 {
+    text-align: left;
+    margin-top:5% ;
+    margin-left:15%;
+}
+
+#cto h2 {
+    margin-top:10% ;
+    margin-left:30.2%;
+    margin-right:35%;
+    text-align: justify;
+}
+
+#cto p {
+    margin-top:0% ;
+    margin-left:28%;
+    margin-right:35%;
+    text-align: justify;
+}
+
+#cto img {
+    width:15%;
+    height:30%;
+    clip-path: circle();
+    margin-top:0% ;
+    margin-left:24%;
+    margin-right:35%;
+}
+
+#cbo {
+    top: 30%;
+    margin-top: 5%;
+    left: 20%;
+    width: 100%;
+    height: 100%;
+    color: white;
+    position: absolute;
+    background-position-x: center;
+    background-color: transparent;
+    z-index: -1;
+}
+
+#cbo h1 {
+    text-align: left;
+    margin-top:5% ;
+    margin-left:15%;
+}
+
+#cbo h2 {
+    margin-top:10% ;
+    margin-left:30.2%;
+    margin-right:35%;
+    text-align: justify;
+}
+
+#cbo p {
+    margin-top:0% ;
+    margin-left:28%;
+    margin-right:35%;
+    text-align: justify;
+}
+
+#cbo img {
+    width:15%;
+    height:30%;
+    clip-path: circle();
+    margin-top:0% ;
+    margin-left:24%;
+    margin-right:35%;
+}
+
+#body-info {
+    top: 20vh;
+    left: 0;
+    width: 105%;
+    height: fill;
+    color: white;
+    position: absolute;
+    background-position-x: center;
+    z-index: -1;
+}
+
+#body-info h1 {
+    text-align: left;
+    margin-top:5% ;
+    margin-left:15%;
+}
+
+#body-info h2 {
+    margin-top:0% ;
+    margin-left:15%;
+    margin-right:35%;
+    text-align: center;
+}
+
+#body-info form {
+    margin-top:0% ;
+    margin-left:15%;
+    margin-right:35%;
+    text-align: left;
+}
+
+#log-info {
+    top: 20vh;
+    left: 0;
+    width: 105%;
+    height: fill;
+    color: white;
+    position: absolute;
+    background-position-x: center;
+    z-index: -1;
+}
+
+#log-info h1 {
+    text-align: left;
+    margin-top:5% ;
+    margin-left:15%;
+}
+
+#log-info h2 {
+    margin-top:0% ;
+    margin-left:15%;
+    margin-right:35%;
+    text-align: center;
+}
+
+#log-info form {
+    margin-top:0% ;
+    margin-left:15%;
+    margin-right:35%;
+    text-align: left;
+}
+
+#log-info p {
+    margin-top:0% ;
+    margin-left:15%;
+    margin-right:35%;
+    text-align: left;
+}
+
+#log-info a {
+    color:aqua;
+}
+
+#log-info a:hover {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#side-bar {
+    position: fixed;
+    top: 22vh;
+    width:10%;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    z-index: 1;
+}
+
+#side-bar ul {
+    list-style-type: none;
+    width:100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(75, 74, 74);
+  }
+  
+#side-bar li {
+    float: center;
+  }
+  
+#side-bar li a {            
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+#side-bar li a:hover {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(119, 115, 115);
+  }
+
+  #home-btn {
+    position: fixed;
+    top: 1%;
+    left:1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    z-index: 1;
+}
+
+.homebtn {
+    position: fixed;
+    size: auto;
+    border: 0;
+    line-height: 2;
+    padding: 0 5px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(83, 83, 83, 1);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.homebtn:hover {
+    background-color:aqua;
+}
+
+#selected-page {
+    position: fixed;
+    top: 18vh;
+    width:10%;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    z-index: 3;
+}
+
+#selected-page ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width:100%;
+    background-color: #111;
+  }
+  
+#selected-page li {
+    float: center;
+  }
+  
+#selected-page li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+#topics {
+    position:fixed;
+    text-align: center;
+    top: 30%;
+    left: 70%;
+    width: 20%;
+    height:fill;
+    font-size: 18px;
+    background-image: linear-gradient(black, rgb(75, 74, 74), black) ;
+    z-index: 3;
+    clip-path: circle(65.0% at 50% 50%);
+}
+
+#topics h1 {
+    color: white;
+}
+
+#topics a{
+    padding: 14px 16px;
+    color:white;
+}
+
+#topics a:hover {
+    font-weight: bold;
+    color:aqua;
+  }
+
+
+#body-info p{
+    margin-top:4% ;
+    margin-left:15%;
+    margin-right:35%;
+    text-align: center;
+    color:white;
+
+}
